@@ -1,5 +1,5 @@
 $date
-     Mar 15, 2017       22:15:12
+     Mar 17, 2017       10:44:18
 $end
 
 $version
@@ -15,6 +15,7 @@ $var wire    1  aaaaa  clock       $end
 $var wire    1  aaaab  reset       $end
 $var wire    2  aaaac  x [1:0]  $end
 $var wire    2  aaaad  y [1:0]  $end
+$var wire    2  aaaae  st [1:0]  $end
 $upscope $end
 $enddefinitions  $end
 
@@ -27,6 +28,7 @@ $dumpvars
 1aaaab
 b0 aaaac
 b10 aaaad
+b0 aaaae
 $end
 
 #2000
@@ -42,6 +44,7 @@ b1 aaaac
 
 #8000
 1aaaaa
+b1 aaaae
 
 #10000
 0aaaaa
@@ -50,6 +53,7 @@ b11 aaaac
 #12000
 1aaaaa
 b1 aaaad
+b11 aaaae
 
 #14000
 0aaaaa
@@ -58,6 +62,7 @@ b0 aaaac
 #16000
 1aaaaa
 b10 aaaad
+b1 aaaae
 
 #18000
 0aaaaa
@@ -65,6 +70,7 @@ b10 aaaad
 #20000
 1aaaaa
 b1 aaaad
+b10 aaaae
 
 #22000
 0aaaaa
@@ -79,6 +85,7 @@ b1 aaaac
 #28000
 1aaaaa
 b10 aaaad
+b1 aaaae
 
 #30000
 0aaaaa
@@ -87,6 +94,7 @@ b11 aaaac
 #32000
 1aaaaa
 b1 aaaad
+b11 aaaae
 
 #34000
 0aaaaa
@@ -94,6 +102,7 @@ b1 aaaad
 #36000
 1aaaaa
 b10 aaaad
+b0 aaaae
 
 #38000
 0aaaaa

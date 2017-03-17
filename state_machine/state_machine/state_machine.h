@@ -8,6 +8,7 @@ SC_MODULE(state_machine) {
     sc_in<bool> reset; // active high, asynchronous Reset input
     sc_in<sc_uint<2> > x; //input
     sc_out<sc_uint<2> > y; //output
+	sc_out<sc_uint<2> > st;
 
     //------------Local Variables Here---------------------
     sc_signal<sc_uint<2> > state;
@@ -24,7 +25,8 @@ SC_MODULE(state_machine) {
             clock("clock"),
             reset("reset"),
             x("x"),
-            y("y"){
+            y("y"),
+			st("st"){
         cout << "Executing new" << endl;
         SC_CTHREAD(change_st, clock.pos());
         async_reset_signal_is(reset, true);

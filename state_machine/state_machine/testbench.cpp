@@ -11,6 +11,7 @@ int sc_main(int argc, char* argv[]) {
     sc_signal<bool> reset;
     sc_signal<sc_uint<2> > x;
     sc_signal<sc_uint<2> > y;
+	sc_signal<sc_uint<2> > st;
     int i = 0;
     // Connect the DUT
     state_machine test_state_machine("test_state_machine");
@@ -18,6 +19,7 @@ int sc_main(int argc, char* argv[]) {
     test_state_machine.reset(reset);
     test_state_machine.x(x);
     test_state_machine.y(y);
+	test_state_machine.st(st);
 
     // Open VCD file
     sc_trace_file *wf = sc_create_vcd_trace_file("st_machine_waveform");
@@ -26,6 +28,7 @@ int sc_main(int argc, char* argv[]) {
     sc_trace(wf, reset, "reset");
     sc_trace(wf, x, "x");
     sc_trace(wf, y, "y");
+	sc_trace(wf, st, "st");
 
     reset = 1; // Assert the reset
     cout << "@" << sc_time_stamp() << " Asserting reset\n" << endl;
@@ -36,35 +39,35 @@ int sc_main(int argc, char* argv[]) {
     cout << "@" << sc_time_stamp() << " De-Asserting reset\n" << endl;
 
 
-    x = 1; //r0->r1
+    x = 1; 
     sc_start(4, SC_NS);
     assert(y.read() == 2);
 
-    x = 3; //r1->r3
+    x = 3; 
     sc_start(4, SC_NS);
     assert(y.read() == 1);
 
-    x = 0; //r3->r1
+    x = 0; 
     sc_start(4, SC_NS);
     assert(y.read() == 2);
 
-    x = 0; //r1->r2
+    x = 0; 
     sc_start(4, SC_NS);
     assert(y.read() == 1);
 
-    x = 0; //r2->r2
+    x = 0; 
     sc_start(4, SC_NS);
     assert(y.read() == 1);
 
-    x = 1; //r2->r1
+    x = 1; 
     sc_start(4, SC_NS);
     assert(y.read() == 2);
 
-    x = 3; //r1->r3
+    x = 3; 
     sc_start(4, SC_NS);
     assert(y.read() == 1);
 
-    x = 3; //r3->r0
+    x = 3; 
     sc_start(4, SC_NS);
     assert(y.read() == 2);
 

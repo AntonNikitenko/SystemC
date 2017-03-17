@@ -35,9 +35,9 @@ void state_machine::change_st() {
 
 void state_machine::data_out() {
     switch(state.read()){
-        case 0: y = 2; break;
-        case 1: y = 2; break;
-        case 2: y = 1; break;
-        default: y = 1;
+        case 0: st=0; y = 2; break;
+        case 1: st=1; y = 2; break;
+        case 2: st=2; y = 1; break;
+        default: st=3; y = 1;
     }
 }
