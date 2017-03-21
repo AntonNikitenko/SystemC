@@ -1,0 +1,317 @@
+$date
+     Mar 21, 2017       19:07:54
+$end
+
+$version
+ SystemC 2.3.1-Accellera --- Mar 10 2017 01:32:33
+$end
+
+$timescale
+     1 ps
+$end
+
+$scope module SystemC $end
+$var wire    1  aaaaa  clock       $end
+$var wire    1  aaaab  reset_n       $end
+$var wire    1  aaaac  areset_n       $end
+$var wire    1  aaaad  load       $end
+$var wire    8  aaaae  data_in [7:0]  $end
+$var wire    8  aaaaf  data_out [7:0]  $end
+$upscope $end
+$enddefinitions  $end
+
+$comment
+All initial values are dumped below at time 0 sec = 0 timescale units.
+$end
+
+$dumpvars
+1aaaaa
+1aaaab
+0aaaac
+0aaaad
+b0 aaaae
+b0 aaaaf
+$end
+
+#2500
+0aaaaa
+
+#5000
+1aaaaa
+1aaaac
+b1 aaaaf
+
+#7500
+0aaaaa
+
+#10000
+1aaaaa
+b10 aaaaf
+
+#12500
+0aaaaa
+
+#15000
+1aaaaa
+b11 aaaaf
+
+#17500
+0aaaaa
+
+#20000
+1aaaaa
+b100 aaaaf
+
+#22500
+0aaaaa
+
+#25000
+1aaaaa
+b101 aaaaf
+
+#27500
+0aaaaa
+
+#30000
+1aaaaa
+b110 aaaaf
+
+#32500
+0aaaaa
+
+#35000
+1aaaaa
+b111 aaaaf
+
+#37500
+0aaaaa
+
+#40000
+1aaaaa
+b1000 aaaaf
+
+#42500
+0aaaaa
+
+#45000
+1aaaaa
+b1001 aaaaf
+
+#47500
+0aaaaa
+
+#50000
+1aaaaa
+b1010 aaaaf
+
+#52500
+0aaaaa
+
+#54000
+1aaaad
+b11 aaaae
+
+#55000
+1aaaaa
+b11 aaaaf
+
+#56000
+0aaaad
+
+#57500
+0aaaaa
+
+#60000
+1aaaaa
+b100 aaaaf
+
+#62500
+0aaaaa
+
+#65000
+1aaaaa
+b101 aaaaf
+
+#67500
+0aaaaa
+
+#70000
+1aaaaa
+b110 aaaaf
+
+#72500
+0aaaaa
+
+#75000
+1aaaaa
+b111 aaaaf
+
+#77500
+0aaaaa
+
+#80000
+1aaaaa
+b1000 aaaaf
+
+#82500
+0aaaaa
+
+#85000
+1aaaaa
+b1001 aaaaf
+
+#87500
+0aaaaa
+
+#90000
+1aaaaa
+b1010 aaaaf
+
+#92500
+0aaaaa
+
+#95000
+1aaaaa
+b1011 aaaaf
+
+#97500
+0aaaaa
+
+#100000
+1aaaaa
+b1100 aaaaf
+
+#102500
+0aaaaa
+
+#105000
+1aaaaa
+b1101 aaaaf
+
+#107500
+0aaaaa
+
+#110000
+1aaaaa
+b1110 aaaaf
+
+#112500
+0aaaaa
+
+#115000
+1aaaaa
+b1111 aaaaf
+
+#117500
+0aaaaa
+
+#120000
+1aaaaa
+b10000 aaaaf
+
+#122500
+0aaaaa
+
+#125000
+1aaaaa
+b10001 aaaaf
+
+#127000
+0aaaab
+
+#127500
+0aaaaa
+
+#130000
+1aaaaa
+b0 aaaaf
+
+#132500
+0aaaaa
+
+#135000
+1aaaaa
+
+#137000
+1aaaab
+
+#137500
+0aaaaa
+
+#140000
+1aaaaa
+b1 aaaaf
+
+#142500
+0aaaaa
+
+#145000
+1aaaaa
+b10 aaaaf
+
+#147500
+0aaaaa
+
+#150000
+1aaaaa
+b11 aaaaf
+
+#152500
+0aaaaa
+
+#155000
+1aaaaa
+b100 aaaaf
+
+#157500
+0aaaaa
+
+#160000
+1aaaaa
+b101 aaaaf
+
+#162500
+0aaaaa
+
+#165000
+1aaaaa
+b110 aaaaf
+
+#167500
+0aaaaa
+
+#170000
+1aaaaa
+b111 aaaaf
+
+#172500
+0aaaaa
+
+#175000
+1aaaaa
+b1000 aaaaf
+
+#177000
+0aaaac
+b0 aaaaf
+
+#177500
+0aaaaa
+
+#178000
+1aaaac
+
+#180000
+1aaaaa
+b1 aaaaf
+
+#182500
+0aaaaa
+
+#185000
+1aaaaa
+b10 aaaaf
+
+#187500
+0aaaaa
+
